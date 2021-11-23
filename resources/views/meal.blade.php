@@ -4,7 +4,7 @@
 @include('partials.header')
 
 <div class="flex flex-col lg:flex-row w-full min-h-screen">
-    <div class="grid flex-grow card rounded-none bg-neutral-focus">
+    <div class="grid flex-grow card rounded-none">
         <form action="{{ route('orderMeal') }}" method="post" id="mealForm" class="p-4">
             @csrf
             <div id="chosenMeals">
@@ -15,14 +15,14 @@
                 <label class="label">
                     <span class="label-text">Total Price</span>
                 </label>
-                <input type="number" name="total_price" id="totalInput" class="input" value="0" readonly>
+                <input type="number" name="total_price" id="totalInput" class="input input-primary input-bordered" value="0" readonly>
             </div>
 
             <div class="form-control my-2">
                 <label class="label">
                     <span class="label-text">Quantity</span>
                 </label>
-                <input type="number" name="quantity" id="quantityInput" class="input" value="0" readonly>
+                <input type="number" name="quantity" id="quantityInput" class="input input-primary input-bordered" value="0" readonly>
             </div>
 
             <div class="text-center mt-8">
