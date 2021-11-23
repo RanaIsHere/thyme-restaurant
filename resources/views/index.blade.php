@@ -7,7 +7,7 @@
         <div class="grid flex-grow card h-full place-items-center border border-primary">
             <div class="bg-primary w-full px-3 py-3">
                 @auth
-                    <h1 class="text-3xl"> Null User </h1>
+                    <h1 class="text-3xl"> {{ Auth::user()->name }} </h1>
                     <p class="text-lg">Cashier</p>
                 @endauth
                 

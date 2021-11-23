@@ -17,7 +17,7 @@ class Meals extends Migration
             $table->id();
             $table->string('meal_name', 64);
             $table->double('meal_price');
-            $table->enum('meal_status', ['AVAILABLE', 'ORDERED']);
+            $table->enum('meal_status', ['AVAILABLE', 'ORDERED'])->default('AVAILABLE');
             $table->timestamps();
         });
     }

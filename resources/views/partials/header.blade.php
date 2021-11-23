@@ -6,8 +6,8 @@
       <div class="items-stretch hidden lg:flex">
         <a href="{{ route('launchIndex') }}" class="btn btn-ghost btn-sm rounded-btn">Home</a>
         @auth 
-          <a class="btn btn-ghost btn-sm rounded-btn">Meals</a> 
-          <a class="btn btn-ghost btn-sm rounded-btn">Orders</a> 
+          <a href="{{ route('meals') }}" class="btn btn-ghost btn-sm rounded-btn">Meals</a> 
+          <a href="{{ route('orders') }}" class="btn btn-ghost btn-sm rounded-btn">Orders</a> 
         @endauth
       </div>
     </div> 

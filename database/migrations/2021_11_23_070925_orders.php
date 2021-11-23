@@ -15,6 +15,7 @@ class Orders extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id');
             $table->json('ordered_meals');
             $table->double('total_price');
             $table->timestamps();
