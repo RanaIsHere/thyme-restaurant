@@ -17,6 +17,7 @@
                 @endguest
             </div>
 
+            @guest
             <div class="bg-neutral-focus py-6 w-full">
                 <form action="{{ route('login') }}" method="post" id="loginForm" class="p-4">
                     @csrf
@@ -39,6 +40,7 @@
                     </div>
                 </form>
             </div>  
+            @endguest
         </div>
 
         <div class="divider lg:divider-vertical"></div>
@@ -67,7 +69,7 @@
                                     <td>{{ $act->id }}</td>
                                     <td>{{ $act->action }}</td>
                                     <td>{{ $act->user->name }}</td>
-                                    <td>{{ $act->created_at }}Today</td>
+                                    <td>{{ $act->created_at }}</td>
                                 </tr>
                             @endforeach
                         </tbody>
